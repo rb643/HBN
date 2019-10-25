@@ -28,7 +28,7 @@ extractEuler_run <- function(site,...) {
   }
 
   write.table(outp,
-              file = '/lustre/archive/q10021/HBN/Data_Out/Euler.csv',
+              file = paste('/lustre/archive/q10021/HBN/Data_Out/',site,'Euler.csv',sep=""),
               quote=FALSE,
               row.names = FALSE,
               col.names = TRUE,
