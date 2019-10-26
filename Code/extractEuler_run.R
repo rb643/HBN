@@ -13,7 +13,7 @@ extractEuler_run <- function(site,...) {
         '/derivatives/',
         eid,
         if (site == "Site-CBIC"){
-        'T1w_HCP_run-01/freesurfer/surf/'
+        'T1w_HCP/freesurfer/surf/'
       } else {
         'freesurfer/surf/'
       }
