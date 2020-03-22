@@ -16,3 +16,6 @@ In addition some minimal quality control scripts are added:
 - **[wavelet_qc.m](/Code/Utils/wavelet_qc.m)**: Generates a plot of time-series for 3 random voxels pre and post denoising    
 - **[FD.py](/Code/Utils/FD.py)**: plots the framewise displacement    
 - **[SP.py](/Code/Utils/SP.py)**: plots the percentage of removed spikes     
+
+Based on these we can for example plot the framewise displacement and spike percentage    
+![QC example](/Figures/qc_fd_sp.png)
