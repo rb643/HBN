@@ -17,5 +17,9 @@ In addition some minimal quality control scripts are added:
 - **[FD.py](/Code/Utils/FD.py)**: plots the framewise displacement    
 - **[SP.py](/Code/Utils/SP.py)**: plots the percentage of removed spikes     
 
-Based on these we can for example plot the framewise displacement and spike percentage    
+#### So we get the following overview for each subject    
+![QC example](/Figures/example_qc.png)
+
+
+#### And we can of course look at some population averages as well  
 ![QC example](/Figures/qc_fd_sp.png)
