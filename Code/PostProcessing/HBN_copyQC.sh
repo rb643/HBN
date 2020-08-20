@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dataDir=/home/rb643/rds/rds-rb643-ukbiobank2/Scratch/HBN/BIDS
-outDir=/home/rb643/rds/rds-rb643-ukbiobank2/Scratch/HBN/QC
+outDir=/home/rb643/rds/rds-rb643-ukbiobank2/Scratch/HBN/QC/Movie_TP
 
 QC_RegDir=${outDir}/QC_RegDir
 QC_SpikeDir=${outDir}/QC_SpikeDir
@@ -17,7 +17,7 @@ mkdir -p ${QC_TSDir}
 site=Site-CBIC
 	for subject in `cat ${site}_subs.txt` ; do
 	#for subject in sub-NDARAB458VK9 ; do
-  		sub_qc=${dataDir}/${subject}-${site}/proc_func/qc
+  		sub_qc=${dataDir}/${subject}-${site}/proc_movie/qc
 
     		if [ -d ${sub_qc} ];then
 					echo "copying qc files - " ${subject} 'from ' ${site}
@@ -30,7 +30,7 @@ site=Site-CBIC
 
 site=Site-RU
 	for subject in `cat ${site}_subs.txt` ; do
-    sub_qc=${dataDir}/${subject}-${site}/proc_func/qc
+    sub_qc=${dataDir}/${subject}-${site}/proc_movie/qc
 
       if [ -d ${sub_qc} ];then
         echo "copying qc files - " ${subject} 'from ' ${site}
@@ -43,7 +43,7 @@ site=Site-RU
 
 site=Site-SI
 	for subject in `cat ${site}_subs.txt` ; do
-    sub_qc=${dataDir}/${subject}-${site}/proc_func/qc
+    sub_qc=${dataDir}/${subject}-${site}/proc_movie/qc
 
       if [ -d ${sub_qc} ];then
         echo "copying qc files - " ${subject} 'from ' ${site}
